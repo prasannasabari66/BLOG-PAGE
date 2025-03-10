@@ -1,0 +1,45 @@
+body{
+    margin-top: 50px !important;
+}
+
+body::before{
+    content: 'XS';
+    color: orange;
+    font-size: 25px;
+    background-color: aliceblue;
+    position: fixed;
+    font-weight: bolder;
+    border-radius: 50% ;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (min-width:576px){
+    body::before{
+        content: 'SM';
+    }
+}
+
+@media screen and (min-width:768px){
+    body::before{
+        content: 'MD';
+    }
+}
+
+@media screen and (min-width:992px){
+    body::before{
+        content: 'LG';
+    }
+}
+
+@media screen and (min-width:1200px){
+    body::before{
+        content: 'XL';
+    }
+}
+
+@media screen and (min-width:1400px){
+    body::before{
+        content: 'XXL';
+    }
+}
